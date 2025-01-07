@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import NirmalaChechi from "./../assets/nirmala-chechi.png";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <div>
+    <Image src={NirmalaChechi} alt="nirmala chechi" />
+    <h2>nirmala mam eee siteinte aiswaryam.</h2>
+  </div>
 </Layout>
+
+<style>
+  h2,
+  h4 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+</style>
